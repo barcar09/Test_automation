@@ -1,0 +1,10 @@
+open_three_rings = open("three_rings.txt","rw")
+
+text_to_file = open_three_rings.read()
+open_three_rings.close()
+
+text_to_file = text_to_file.replace(',','')
+text_to_file = text_to_file.replace('.','')
+text_to_file = text_to_file.split()
+text_to_file = sorted(list(set(text_to_file)))
+print(text_to_file)
