@@ -1,3 +1,5 @@
+#open a file remve donts and commas, remove non unique words
+# sort list of words
 open_three_rings = open("three_rings.txt","rw")
 
 text_to_file = open_three_rings.read()
